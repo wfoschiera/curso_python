@@ -9,9 +9,7 @@ def baixar_info_video(video_id):
         info_dict = ydl.extract_info(video_url, download=False)
         return info_dict
     
-
-
-
-video1 = "uhG8UcjsKuo"
-
-info = baixar_info_video(video1)
+if __name__ == "__main__":
+    video1 = "uhG8UcjsKuo"
+    info = baixar_info_video(video1)
+    print(info)
